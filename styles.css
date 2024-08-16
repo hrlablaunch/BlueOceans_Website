@@ -1,0 +1,266 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    color:#455c05;
+    font-size: 14px;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    max-width: 400px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    /*color: #333;*/
+    color:#A2C837;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 200px 20px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-content button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.about {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about h2 {
+    color: #A2C837;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.about-content {
+    display: flex;
+    font-size: 25px;
+    color:  #5d7a0b;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-content img {
+    max-width: 500px;
+    border: 1px solid #ddd;
+}
+
+.services {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color:#A2C837;
+    font-weight: bold;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.service img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.service-text {
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+}
+
+.service-text h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-text p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.service-text a {
+    color: #a0c639; /* Green color for the link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.service-text a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .service {
+        flex-direction: column;
+    }
+
+    .service img,
+    .service-text {
+        width: 100%;
+    }
+
+    .service-text {
+        text-align: center;
+    }
+}
+
+
+.what-we-do {
+    padding: 40px 20px;
+    background-color: #e0f7fa;
+    text-align: center;
+}
+
+.what-we-do h2 {
+    color: #A2C837;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.what-we-do p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.approvals {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.approvals h2 {
+    color: #A2C837;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.approval-logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.approval-logos img {
+    max-width: 300px;
+}
+
+.why-choose-us {
+    padding: 60px 20px;
+    background-color: #0a508b; /* Darker blue shade */
+    color: white;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #A2C837; /* Use the same green for consistency */
+}
+
+.choose-us-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.choose-us-card {
+    background-color:  #08549c; /* White card background */
+    color: #ffffff; /* Blue text color */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    max-width: 250px;
+    min-height: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.choose-us-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.choose-us-card img {
+    max-width: 60px;
+    margin-bottom: 20px;
+}
+
+.choose-us-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.choose-us-card p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 14px;
+}
